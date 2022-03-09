@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+}
+
+.main-container{
+    height: 100vh;
+    margin: 3rem auto;
+    width: 360px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: .625rem;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.main-container .image-card img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 360px;
+}
+
+.main-container .text-card{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.main-container .text-card h1{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color:#000000;    
+    text-shadow: 1px 0 #000000;
+    letter-spacing:1px;
+    font-weight:bolder;
+}
+
+.main-container .text-card p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.main-container .rate-card{
+    margin: 15px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+.main-container .rate-card span{
+    cursor: pointer;
+} 
+
+.main-container .rate-card ul{
+    padding: 0;
+    cursor: default;
+}
+.main-container .rate-card ul li{
+    list-style: none;
+}
+
+.main-container .final-card{
+    width: 300px;
+    margin: 0 auto;
+}
+.main-container .final-card ul{
+    padding: 0;
+}
+.main-container .final-card ul li{
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.main-container .final-card ul li button{
+    background-color: hsl(223, 47%, 23%);
+    border-color: hsl(223, 47%, 23%);
+    color: white;
+    cursor: pointer;
+    width: 280px;
+    height: 50px;
+    border-radius: .625rem;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.main-container .final-card ul li button:hover{
+    background-color: hsl(245, 75%, 52%);
+}
