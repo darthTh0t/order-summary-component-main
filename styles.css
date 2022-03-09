@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    margin-top: 20px;
     padding: 0;
     font-size: 18px;
     font-family: 'Red Hat Display', sans-serif;
@@ -9,10 +10,11 @@ body{
     background-color: hsl(225, 100%, 94%);
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: repeat-x;
+    height: 580px;
 }
 
 .main-container{
-    height: 560px;
+    max-height: 580px;
     margin: 3rem auto;
     width: 360px;
     height: 80vh;
@@ -23,6 +25,7 @@ body{
     border-radius: .625rem;
     background-color: hsl(225, 100%, 98%);
     color: hsl(224, 23%, 55%);
+    overflow: hidden;
 }
 
 .main-container .image-card img{
@@ -32,6 +35,7 @@ body{
 }
 
 .main-container .text-card{
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -44,6 +48,7 @@ body{
     text-shadow: 1px 0 #000000;
     letter-spacing:1px;
     font-weight:bolder;
+    position: relative;
 }
 
 .main-container .text-card p{
@@ -52,6 +57,7 @@ body{
     font-size: 16px;
     padding: 0 10px;
     font-weight: 500;
+    position: relative;
 }
 
 .main-container .rate-card{
@@ -111,8 +117,9 @@ body{
 }
 
 .main-container .final-card ul li button{
-    background-color: hsl(223, 47%, 23%);
-    border-color: hsl(223, 47%, 23%);
+    position: relative;
+    background-color: hsl(245, 75%, 52%);
+    border-color: hsl(245, 75%, 52%);
     color: white;
     cursor: pointer;
     width: 280px;
@@ -126,10 +133,18 @@ body{
 }
 
 .main-container .final-card ul li button:hover{
-    background-color: hsl(245, 75%, 52%);
+    background-color: hsl(219, 84%, 57%);
+    border-color: hsl(219, 84%, 57%);
 }
 
 #cancel-order{
     padding: 30px;
     font-size: 14px;
+}
+
+
+@media (max-height: 600px){
+    .main-container{
+        max-height: 480px;
+    }
 }
